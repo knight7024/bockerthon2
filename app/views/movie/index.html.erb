@@ -1,0 +1,8 @@
+<form action="movie/result" method="GET">
+    <input type="text" name="search">
+    <button type="submit" name="submit">검색</button>
+</form>
+
+<% for @i in 0..((@t1.length)-1) %>
+<div><a href="http://www.cine21.com/<%= @uri[@i]['href'] %>"><p><%= @t1[@i].content %></p></a></div>
+<% end %>
